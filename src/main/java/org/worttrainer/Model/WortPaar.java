@@ -2,6 +2,7 @@ package org.worttrainer.Model;
 
 import org.worttrainer.Model.Rechtschreibtrainer;
 
+import java.net.MalformedURLException;
 import java.net.URL;
 
 public class WortPaar {
@@ -12,8 +13,9 @@ public class WortPaar {
 
 	private Rechtschreibtrainer[] rechtschreibtrainer;
 
-	public WortPaar(String linkUrl) {
-
+	public WortPaar(String wort,String linkUrl) throws MalformedURLException {
+		this.wort = wort;
+		this.url = new URL(linkUrl);
 	}
 
 	public String getWort(){

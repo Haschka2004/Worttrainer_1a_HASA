@@ -1,9 +1,11 @@
 package org.worttrainer.Controller;
 
 import org.worttrainer.Model.Rechtschreibtrainer;
+import org.worttrainer.View.WortPaarFrame;
 import org.worttrainer.View.WortPaarPanel;
 
 import java.awt.event.ActionEvent;
+import java.net.MalformedURLException;
 
 public class WortPaarController {
 
@@ -13,10 +15,18 @@ public class WortPaarController {
 
 	private Rechtschreibtrainer rechtschreibtrainer;
 
-	private WortPaarPanel wortPaarPanel;
+	private WortPaarFrame wortPaarFrame;
 
+
+	public void WortPaarPanel() throws MalformedURLException {
+		rechtschreibtrainer = new Rechtschreibtrainer();
+		panel = new WortPaarPanel();
+		wortPaarFrame = new WortPaarFrame(panel);
+	}
 
 	public void actionPerformed(ActionEvent e) {
+
+
 
 	}
 
