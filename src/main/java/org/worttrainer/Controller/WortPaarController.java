@@ -8,7 +8,6 @@ import java.awt.event.ActionEvent;
 import java.net.MalformedURLException;
 
 public class WortPaarController {
-
 	private Rechtschreibtrainer trainer;
 
 	private WortPaarPanel panel;
@@ -16,6 +15,7 @@ public class WortPaarController {
 	private Rechtschreibtrainer rechtschreibtrainer;
 
 	private WortPaarFrame wortPaarFrame;
+	private String eingabe;
 
 
 	public void WortPaarPanel() throws MalformedURLException {
@@ -26,8 +26,23 @@ public class WortPaarController {
 
 	public void actionPerformed(ActionEvent e) {
 
+		Object o = e.getSource();
+		String ac = e.getActionCommand();
+
+		eingabe = ac;
+		for(int i = )
+		if(ac.equals(rechtschreibtrainer.getRandomPaar().getWort())){
+
+
+
+		}
+
+
 
 
 	}
 
+	public String getEingabe() {
+		return eingabe;
+	}
 }
